@@ -1,13 +1,82 @@
 /* VARIABILI CSS */
 :root {
     --first-color: #ff9900;
-    --second-color: #0B1B9B;
+    --second-color: #0b1b9b;
     --third-color: #e50000;
+    --fourth-color: #ff55a3;
     --border-color: #ff3300;
-    --shadow-hue-color: #ff55a3;
+    --shadow-hue-color: #0b1c9bc4;
+    --text-color: #202020;
 }
 
 /* UNIVERSAL TAG */
+/* aggiunta del cursore personalizzato a forma di kunai */
 * {
     cursor: url("/src/assets/cursor/kunai-cursor.cur"), auto;
+}
+
+/* TAG SELECTOR */
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ID SELECTOR */
+/* stile per l'header */
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--first-color);
+    padding: 10px;
+}
+
+/* stile del footer */
+#footer {
+    background-color: #111; /* Sfondo scuro per contrasto */
+    color: var(--first-color);
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Utile per i dispositivi mobili */
+    gap: 2rem;
+}
+
+/* CLASS SELECTOR */
+/* stile per gli elementi all'interno dell'header */
+.naruto-logo-page {
+    width: 250px;
+    padding: 10px;
+    filter: drop-shadow(30px 10px 4px var(--shadow-hue-color));
+}
+
+.text-header {
+    padding: 5px;
+}
+
+/* stile degli elementi all'intrno del footer */
+.section h3 {
+    color: var(--fourth-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.section a {
+    color: var(--first-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.section a:hover {
+    color: var(--third-color);
 }
