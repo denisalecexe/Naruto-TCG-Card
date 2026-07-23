@@ -1,0 +1,13 @@
+/* VARIABILI CSS */
+:root {
+    --first-color: #ff9900;
+    --second-color: #0B1B9B;
+    --third-color: #e50000;
+    --border-color: #ff3300;
+    --shadow-hue-color: #ff55a3;
+}
+
+/* UNIVERSAL TAG */
+* {
+    cursor: url("/src/assets/cursor/kunai-cursor.cur"), auto;
+}
